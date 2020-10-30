@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('neighbourhoodapp.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^logout/$', views.logout, {"next_page": '/'}),
+    url(r'^logout/$', views.LogoutView.as_view(next_page = '/')), 
     url(r'^api-token-auth/', obtain_auth_token),
 ]

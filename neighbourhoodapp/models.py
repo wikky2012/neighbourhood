@@ -35,7 +35,7 @@ class Image(models.Model):
     name = models.CharField(max_length=40)
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, related_name="images")
     description = models.TextField()
-    location = models.ForeignKey(Location, null=True)
+    location = models.ForeignKey(Location,on_delete=models.CASCADE, null=True)
     tags = models.ManyToManyField(tags, blank=True)
     likes = models.IntegerField(default=0)
     comments = models.TextField(blank=True)
@@ -236,7 +236,7 @@ class Profile(models.Model):
     bio = models.TextField(max_length=200, null=True, blank=True, default="bio")
     profile_pic = models.ImageField(upload_to='picture/', null=True, blank=True, default=0)
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="profile")
-    project = models.ForeignKey(Project, null=True)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, null=True)
     email= models.TextField(max_length=200, null=True, blank=True, default=0)
     neighbourhood_id = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE,related_name="neighbourhood",null=True,blank=True)
 
