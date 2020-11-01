@@ -1,13 +1,12 @@
 # Neighbourhood Application
 
 ## Author  
-  
 [Ronoh K. Wycliffe](https://github.com/wikky2012/neighbourhood)  
   
 # Description  
-This is a web application enables users sign up to it and interact with the various happening in their neighbourhood.
+This is a web application that enables users sign up to it and interact with the various happening in their neighbourhood.
   
-  It allows users to:
+It allows users to:
 * Sign in with the application to start using it.
 * Set up a profile about themselves, enter a general location of where they live.
 * Find a list of different businesses in their neighborhood.
@@ -19,8 +18,7 @@ This is a web application enables users sign up to it and interact with the vari
 ##  Live Link  
 click [here]()  to visit the live site
 
- ### Prerequisites
-
+### Prerequisites
 The following are needed for the application to run on a local computer:
 * python version 3.8
 * Django framework
@@ -49,7 +47,7 @@ If you don't have it installed got to [Python.org](https://www.python.org/downlo
 * Once inside the application, a user will be able to use the application.
 
  ##### Setup Database  
-  SetUp your database User and Password, then makemigrations 
+SetUp your database User and Password, then makemigrations 
  ```bash 
  python manage.py makemigrations 
  ``` 
@@ -70,7 +68,7 @@ If you don't have it installed got to [Python.org](https://www.python.org/downlo
 ## Technologies used  
   
 * [Python3.8](https://www.python.org/)  
-* [Django 3.1.2](https://www.djangoproject.com/download/)  
+* [Django 2.2](https://www.djangoproject.com/download/)  
 * [Heroku](https://heroku.com)  
   
   
