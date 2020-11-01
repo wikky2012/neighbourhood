@@ -1,6 +1,5 @@
 # Neighbourhood Application
 
-# Ronoh K. Wycliffe Personal Gallery
 ## Author  
   
 [Ronoh K. Wycliffe](https://github.com/wikky2012/neighbourhood)  
